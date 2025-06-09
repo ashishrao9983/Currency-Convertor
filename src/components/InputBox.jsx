@@ -7,7 +7,7 @@ function InputBox({
   onCurrencyChange,
   currencyOptions = [],
   selectCurrency ="usd",
-  amountDisable= false,
+  amountDisabled= false,
   currencyDisabled=false,
   className = "",
 }) {
@@ -25,7 +25,7 @@ function InputBox({
           className="outline-none w-full bg-transparent py-1.5"
           type="number"
           placeholder="Amount"
-          disabled={amountDisable}
+          disabled={amountDisabled}
           value ={amount}
           onChange={(e) => onAmountChange &&  onAmountChange(Number(e.target.value))}
     
@@ -35,13 +35,13 @@ function InputBox({
       <div className="w-1/2 flex flex-wrap justify-end text-right">
         <p className="text-black/40 mb-2 w-full">Currency Type</p>
         <select
-          className="rounded-lg px-1 py-1 bg-gray-300 cursor-pointer outline-black"
+          className="rounded-lg px-1 py-1 bg-gray-300 cursor-pointer outline-black shadow-md"
           value={selectCurrency}
           onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
           disabled ={currencyDisabled}
         >
         
-          {currencyOptions.map((currency)  => (  <option key={currency} value={currency}>{currency}</option>))}
+          {currencyOptions.map((currency)  => (  <option key={currency} value={currency}>{currency.toUpperCase()}</option>))}
         </select>
       </div>
     </div>
