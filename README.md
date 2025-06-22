@@ -1,12 +1,45 @@
-# React + Vite
+# 💱 Currency Converter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern Currency Converter built using **React** and **TailwindCSS**. This app fetches live exchange rates and lets users convert between different currencies in real-time.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Live Demo Link](https://ashishrao9983.github.io/Currency-Convertor/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Key Concepts Used
+
+### 🔹 React JS
+- **Component-based architecture**: Created reusable components like `CurrencySelector`, `ConverterInput`, and `ResultDisplay`.
+- **Hooks**:
+  - `useState` for managing input values, selected currencies, and conversion results.
+  - `useEffect` to fetch the latest currency rates when the component mounts or selected currencies change.
+- **JSX**: For writing HTML-like syntax directly in JavaScript files.
+
+### 🔹 Tailwind CSS
+- Utility-first CSS framework to design responsive layouts with minimal custom CSS.
+- Used Tailwind classes for:
+  - **Responsive grid layouts**
+  - **Theming and spacing**
+  - **Button, input, and dropdown styling**
+  - **Dark/light mode support (optional)**
+
+### 🔹 API Integration
+- Used **ExchangeRate API** (or any other currency API like Open Exchange Rates or exchangerate.host) to fetch live currency rates.
+- Handled asynchronous data fetching using `fetch()` or `axios`.
+
+---
+
+## 📦 Features
+
+- 🔄 Real-time currency conversion
+- 🌐 Supports multiple currencies
+- 🔍 Clean and intuitive UI
+- 📱 Responsive design for all screen sizes
+- ⚡ Fast and lightweight
+- 💡 Clear error handling for API failures or invalid input
+
+---
+
+
